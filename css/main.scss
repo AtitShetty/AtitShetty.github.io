@@ -1897,8 +1897,8 @@ ul	{
 	align-items: stretch;
 
 	.sidenav{
-		flex-basis: 25vw;
-		padding: 6em 0 4em 2em;
+		flex-basis: 20vw;
+		padding: 6em 0 6em 1em;
 		background-color: #fff;
 		color: #000;
 		hr{
@@ -1940,6 +1940,6 @@ ul	{
 
 	}
 	.main{
-		flex-basis: 75vw;
+		flex-basis: 80vw;
 	}
 }
