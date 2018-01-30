@@ -1,0 +1,90 @@
+- title: DevOps
+  link: devops
+  projects:
+    - name: Automated Robust Continuous Deployment
+      link: https://github.com/AtitShetty/DevOps-Robust-Continuous-Deployment
+      description: |
+        <li> Devised Ansible roles that can create and provision remote virtual machines hosted on AWS, capable of running Jenkins CI jobs and subsequently trigger intelligent deployment to a Nomad cluster, that is fault tolerant with ability to rollback in case of any failure.</li>
+        <li> Created a robust rolling update strategy for sending updates to all the nodes in AWS, that updates only few nodes at a time.</li>
+        <li> Built a canary release strategy using Node.js and Redis Server that will publish and manage new experimental features to production environments.</li>
+      languages: JavaScript
+      technologies: Ansible, Node.js, Jenkins, AWS, Redis
+
+    - name: Cluster Monitoring and Auto-recovery Agent
+      link: https://github.com/AtitShetty/DevOps-Cluster-Monitoring-Agent
+      description: |
+        <li> Created an agent which monitors traffic from Nginx load balancer to clusters of AWS nodes hosting micro-services, the logs of which are parsed and saved on an Elastic Stack.</li>
+        <li> On discovery of under-performing node/s, agent will stop all the traffic to that node/s, notify system admin and try to recover the node/s by performing predefined actions based on type of problem.</li>
+      languages: JavaScript
+      technologies: Ansible, Node.js, Elastic Stack, AWS, Redis, Nginx
+
+- title: Artificial Intelligence and Machine Learning
+  link: ai
+  projects:
+    - name: AI assistant for Lexis Advance, Lexis Nexis Hackathon
+      link: https://github.com/AtitShetty/LexisNexisHackBot
+      description: |
+        Built an interactive chat bot using NLP that can help find relevant information across multiple pages and data store of Lexis Advance System, by leveraging power of Node.js, Microsoft Bot Framework and Azure Services.
+      languages: JavaScript, Python
+      technologies: Microsoft Bot Framework and Azure Services, Node.js
+
+    - name: The Natural Conservancy Fisheries Monitoring
+      link:
+      description: |
+        <li> Employed machine learning to monitor fishing techniques and identify any illegal activities.</li>
+        <li> The inputs were from cameras installed on boats, which are processed using convolution neural networks, using Keras and Tensorflow, to accurately classify fishes.</li>
+      languages: Python
+      technologies: Keras, Tensorflow
+
+- title: Networking
+  link: networks
+  projects:
+    - name: Peer-To-Multi-Peer File Transfer System
+      link: https://github.com/AtitShetty/p2mp-ftp
+      description: |
+        <li> A simple java application that uses UDP protocol for fast transfer of a file to multiple peers from one peer.</li>
+        <li> A peer advertises a list of files it has available in its repository to all the peers in its list.</li>
+        <li> Any peer that needs a particular will send the request to this peer, which on receipt of response from all peers proceeds to transfer the file to all the requesters.</li>
+        <li> If a file has not been transferred, it will try again till file transfer is successful, this achieving reliability on UDP.</li>
+      languages: Java
+
+- title: RESTful Applications in Android
+  link: android
+  projects:
+    - name: Business Services using Peer-To-Peer Referral System
+      link: https://github.com/AtitShetty/ReferralSystem
+      description: |
+        <li> An android application for providing business services using peer to peer referral system, based on highly scalable Akka server and powered by Play Framework.</li>
+        <li> The user can provide a matrix of their requirements, which will be checked with their immediate acquaintances. If a particular acquaintance cannot fulfill acquaintance, it will refer it's own acquaintance that can possibly fulfill the requirement. This acquaintance is now a new acquaintance of the user.</li>
+        <li> When an acquaintance fulfills a request, it's importance factor is increased and can become a preferred acquaintance for fulfilling requests.</li>
+      languages: Java
+      technologies: Play Framework, SBT, Akka Server, Android Studio
+
+    - name: Distance Tracker Android Application
+      link: https://github.com/AtitShetty/DistanceTracker
+      description: |
+         A simple android based application powered by Play Framework that tracks a user's current location and keeps a track of distance travelled by the user.
+      languages: Java
+      technologies: Play Framework, SBT, Android Studio
+
+- title: WebApps
+  link: webapp
+  projects:
+    - name: Reservation Management System for Library
+      link: https://github.com/AtitShetty/LibraryApp
+      description: |
+        <li> A robust web application designed using Ruby on Rails that allows users to create accounts and reservations as well as to manage their profiles and reservations.</li>
+        <li> Admins can use the app to manage accesses and reservations of users.</li>
+      languages: Ruby on Rails, JavaScript, HTML, CSS
+      technologies: PostgreSQL, Heroku, RubyMine
+
+- title: Some other interesting projects
+  link: other
+  projects:
+    - name: Tumor Board Protocol
+      link: https://github.com/AtitShetty/BSPL-Tumor-Board-Protocol
+      description: |
+        <li> A protocol designed using Blindingly Simple Protocol Language (BSPL) that formalizes interactions and business services between patient and entities of medical institution for successful identification of cancer.</li>
+        <li> The protocol can be tested using <a href="https://github.com/shader/protocheck">protocheck</a> tool.</li>
+      languages: BSPL
+      technologies: <a href="https://github.com/shader/protocheck">protocheck</a>

@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article id="main">
+
+  <header>
+    <h2>{%if page.title_alt%}{{ page.title_alt }}{% else %}{{ page.title }}{% endif %}</h2>
+    <p>{{ page.subtitle }}</p>
+  </header>
+
+<div class="flex-container">
+  <div class="sidenav">
+    <section>
+      <ul>
+        {% for category in site.data.projects %}
+        <li><a href="#{{ category.link }}"><span class="fa fa-cog"></span> {{ category.title }}</a></li>
+        {% endfor %}
+      <hr/>
+      </ul>
+    </section>
+  </div>
+  <div class="main">
+  <section class="wrapper style5">
+    <div class="inner">
+      {{ content }}
+    </div>
+  </section>
+</div>
+</div>
+
+</article>
