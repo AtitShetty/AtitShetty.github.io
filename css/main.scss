@@ -1866,6 +1866,9 @@ ul	{
 		list-style-type: none !important;
 		margin: 0;
 		padding: 0 0 0 1em;
+		li:not(:last-child){
+			padding-bottom: 0.5em;
+		}
 	}
 
 	section	{
@@ -1876,15 +1879,15 @@ ul	{
 		}
 		code{
 			color:#fff;
-			background-color: #dc3545 !important;
+			background-color: #dc3545;
 			&.technologies{
-				background-color: #08e !important;
+				background-color: #08e;
 			}
 			&.languages{
-				background-color: #dc3545 !important;
+				background-color: #dc3545;
 			}
 			&.duration{
-				background-color: #00600f !important;
+				background-color: #00600f ;
 			}
 		}
 	}
@@ -1918,7 +1921,7 @@ ul	{
 			font-family: serif;
 			font-size: 25px;
 			a.title{
-				color: #4CAF50;
+				color: #387002;
 			}
 			a	{
 				border: 0;
@@ -1972,8 +1975,11 @@ body.is-mobile{
 }
 
 .project{
-	h2{
-		color: #4CAF50 !important;
+	h2.title{
+		color: #fff !important;
+		background-color: #2E3842 !important;
+		padding: 0 1em 0 1em;
+		border-radius: 20px;
 	}
 	margin-bottom: 2em;
 	border-bottom: 1px dashed #4CAF50;
@@ -1983,5 +1989,18 @@ body.is-mobile{
 	.subtitle{
 		font-size: 0.85em;
 		opacity: 0.7;
+		white-space: nowrap;
+	}
+}
+
+.project.technologies{
+	.wrapper{
+		padding: 4em 0 4em 0
+	}
+	h2,h3,h4,p {
+		color: #fff !important;
+	}
+	section{
+		background-color: #62727b;
 	}
 }

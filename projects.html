@@ -5,11 +5,11 @@ subtitle: My experience along with some interesting ideas and technologies that 
 banner_img: idea1-blue.jpg
 ---
 <div class="project experience" id="experience">
-  <h2><span class="fa fa-arrow-down"></span> Awesome Experience</h2>
+  <h2 class="title"><span class="fa fa-arrow-down"></span> Awesome Experience</h2>
   <section>
     {% for exp in site.data.experiences %}
     <h3>{{ exp.company_name}}</h3>
-    <span class="subtitle">{{ exp.title}}</span><span style="float:right" class="subtitle">{{ exp.location }}</span>
+    <span class="subtitle">{{ exp.title}}</span>&nbsp;<span style="float:right" class="subtitle">{{ exp.location }}</span>
     <hr/>
     <p>
       <ul>
@@ -18,12 +18,12 @@ banner_img: idea1-blue.jpg
     </p>
     <p>
       {% if exp.duration %}<code class="duration" title="Duration">{{ exp.duration }}</code><br/>{% endif %}
-      </p>
+    </p>
     {% endfor %}
   </section>
 </div>
 <div class="project projects" id="projects">
-  <h2><span class="fa fa-arrow-down"></span> Cool Projects</h2>
+  <h2 class="title"><span class="fa fa-arrow-down"></span> Cool Projects</h2>
   {% for category in site.data.projects %}
   <div id="{{ category.link }}">
     <section>
@@ -34,7 +34,7 @@ banner_img: idea1-blue.jpg
           {% for project in category.projects %}
           <li>
             <h4><a href="{{ project.link }}">{{ project.name }}</a></h4>
-            <p>{{ project.description }}</p>
+            <p><ul>{{ project.description }}</ul></p>
             {% if project.languages or project.technologies %}
             <p>
               {% if project.languages %}<code class="languages" title="Languages">{{ project.languages }}</code><br/>{% endif %}
@@ -53,40 +53,49 @@ banner_img: idea1-blue.jpg
   {% endfor %}
 </div>
 <div class="project technologies" id="technologies">
-  <h2><span class="fa fa-arrow-down"></span> Tools of the Trade</h2>
-  <!-- <section class="wrapper style3 special" style="width:auto !important;">
-  <div class="inner">
-  <header class="major">
-  <h2>Accumsan mus tortor nunc aliquet</h2>
-  <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-  fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-</header>
-<ul class="features">
-<li class="icon fa-paper-plane-o">
-<h3>Arcu accumsan</h3>
-<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-</li>
-<li class="icon fa-laptop">
-<h3>Ac Augue Eget</h3>
-<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-</li>
-<li class="icon fa-code">
-<h3>Mus Scelerisque</h3>
-<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-</li>
-<li class="icon fa-headphones">
-<h3>Mauris Imperdiet</h3>
-<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-</li>
-<li class="icon fa-heart-o">
-<h3>Aenean Primis</h3>
-<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-</li>
-<li class="icon fa-flag-o">
-<h3>Tortor Ut</h3>
-<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-</li>
-</ul>
-</div>
-</section> -->
-</div>
+  <h2 class="title"><span class="fa fa-arrow-down"></span> Tools of the Trade</h2>
+  <section class="wrapper special">
+    <div class="inner">
+      <header class="major">
+        
+        <p>The two most important things in Computer Science are <bold>Algorithms</bold> and <bold>Data Structures</bold>.<br/>
+        However, knowing few tools and languages can certainly get work done faster. </p>
+        </header>
+        <ul class="features">
+          <li class="icon fa-language">
+            <h3>Languages</h3>
+            <p>Java, Ruby on Rails<br/>
+              JavaScript, Python<br/>
+              R, SQL, Prolog<br/>
+              HTML, CSS</p>
+          </li>
+          <li class="icon fa-globe">
+            <h3>Environment</h3>
+            <p>Windows, Linux, Android<br/><br/>
+              Eclipse, AndroidStudio<br/>RubyMine, RStudio, Atom</p>
+          </li>
+          <li class="icon fa-terminal">
+            <h3>Technologies</h3>
+            <p>Ansible, Puppet, Docker<br/><br/>
+              Elastic Stash, AWS, IBM Liberty, GIT, Nomad, Redis<br/><br/>
+              MS Bot Framework and Azure Services, Keras, Tensorflow<br/><br/>
+              Node.js, Play, Spring, ANTLR, Hibernate, IBM DB2, MySQL<br/><br/>
+              Angular 4, Android, Jekyll<br/><br/>
+              Adobe Experience Manager, Nginx, IBM WebSphere, Tomcat</p>
+          </li>
+          <!-- <li class="icon fa-headphones">
+            <h3>Mauris Imperdiet</h3>
+            <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+          </li>
+          <li class="icon fa-heart-o">
+            <h3>Aenean Primis</h3>
+            <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+          </li>
+          <li class="icon fa-flag-o">
+            <h3>Tortor Ut</h3>
+            <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+          </li> -->
+        </ul>
+      </div>
+    </section>
+  </div>

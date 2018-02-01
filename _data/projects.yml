@@ -24,7 +24,8 @@
     - name: AI assistant for Lexis Advance, Lexis Nexis Hackathon
       link: https://github.com/AtitShetty/LexisNexisHackBot
       description: |
-        Built an interactive chat bot using NLP that can help find relevant information across multiple pages and data store of Lexis Advance System, by leveraging power of Node.js, Microsoft Bot Framework and Azure Services.
+        <li>Built an interactive chat bot using NLP that can help find relevant
+        information across multiple pages and data store of Lexis Advance System, by leveraging power of Node.js, Microsoft Bot Framework and Azure Services.</li>
       languages: JavaScript, Python
       technologies: Microsoft Bot Framework and Azure Services, Node.js
 
