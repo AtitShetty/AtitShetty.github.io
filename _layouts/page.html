@@ -6,6 +6,9 @@ layout: default
   <header>
     <h2>{%if page.title_alt%}{{ page.title_alt }}{% else %}{{ page.title }}{% endif %}</h2>
     <p>{{ page.subtitle }}</p>
+    {% if page.special_link and page.special_link_desc %}
+      <li><a href="{{ page.special_link }}" class="button special"download>{{ page.special_link_desc }}</a></li>
+    {% endif %}
   </header>
 
   <section class="wrapper style5">

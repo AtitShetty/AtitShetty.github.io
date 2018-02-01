@@ -2004,3 +2004,43 @@ body.is-mobile{
 		background-color: #62727b;
 	}
 }
+
+.resume{
+
+		tr td:first-child{
+			width: 28%;
+		}
+
+		td.name{
+			text-align: center;
+			img{
+				//margin-left: 10%;
+				width: 20%;
+			}
+		}
+
+		td{
+			section{
+
+				h3{
+					color: #006db3 !important;
+				}
+				h4{
+					border-bottom: 1px dotted #006db3;
+				}
+			}
+			&.exp > section{
+				text-align: justify;
+			}
+		}
+
+}
+
+section{
+	&.contact{
+		line-height: 3em;
+		padding: 1em;
+		border: 1px dashed #14627b;
+		border-radius: 15px;
+	}
+}
