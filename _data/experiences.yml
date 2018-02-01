@@ -1,0 +1,18 @@
+- company_name: HCL Technologies
+  link: hcl
+  title: Innovation Lab Intern (Software Engineering)
+  location: Cary, USA
+  duration: May, 2017 - Current
+  description: |
+    <li>A team comprising of handful of people and backed by a great mentor, the primary goal of Innovation Lab was to deliver ideas in an Agile manner.</li>
+    <li>Some of the interesting areas that I have worked on include
+    building an intelligent data synthesis application in Java, constructing a DevOps practice using Jenkins and Ansible,
+    creating reusable components in Angular 4 and integrating them with RESTful Java application.<li>
+
+- company_name: Accenture
+  link: accenture
+  title: Software Engineer
+  location: Mumbai, India
+  duration: Nov, 2013 - July, 2016
+  description: |
+    This was the beginning of my professional experience as a software developer. I had the opportunity to work on multiple complex e-commerce  projects.

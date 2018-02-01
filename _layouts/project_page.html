@@ -8,24 +8,31 @@ layout: default
     <p>{{ page.subtitle }}</p>
   </header>
 
-<div class="flex-container">
-  <div class="sidenav">
-    <section>
-      <ul>
-        {% for category in site.data.projects %}
-        <li><a href="#{{ category.link }}"><span class="fa fa-cog"></span> {{ category.title }}</a></li>
-        {% endfor %}
-      <hr/>
-      </ul>
-    </section>
-  </div>
-  <div class="main">
-  <section class="wrapper style5">
-    <div class="inner">
-      {{ content }}
+  <div class="flex-container">
+    <div class="sidenav">
+      <section>
+        <ul>
+          <li><a href="#experience" class="title"><span class="fa fa-copyright"></span> Awesome Experience</a><hr/></li>
+          <li><a href="#projects" class="title"><span class="fa fa-code"></span> Cool Projects</a>
+            <ul>
+              <li></li>
+              {% for category in site.data.projects %}
+              <li><a href="#{{ category.link }}"><span class="fa fa-cog"></span> {{ category.title }}</a></li>
+              {% endfor %}
+            </ul>
+            <hr/>
+          </li>
+          <li><a href="#technologies" class="title"><span class="fa fa-suitcase"></span> Tools of the Trade</a></li>
+        </ul>
+      </section>
     </div>
-  </section>
-</div>
-</div>
+    <div class="main">
+      <section class="wrapper style5">
+        <div class="inner">
+          {{ content }}
+        </div>
+      </section>
+    </div>
+  </div>
 
 </article>

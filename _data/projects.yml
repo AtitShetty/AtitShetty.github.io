@@ -58,7 +58,7 @@
         <li> The user can provide a matrix of their requirements, which will be checked with their immediate acquaintances. If a particular acquaintance cannot fulfill acquaintance, it will refer it's own acquaintance that can possibly fulfill the requirement. This acquaintance is now a new acquaintance of the user.</li>
         <li> When an acquaintance fulfills a request, it's importance factor is increased and can become a preferred acquaintance for fulfilling requests.</li>
       languages: Java
-      technologies: Play Framework, SBT, Akka Server, Android Studio
+      technologies: Play Framework, SBT, Akka, Android Studio
 
     - name: Distance Tracker Android Application
       link: https://github.com/AtitShetty/DistanceTracker
