@@ -1648,12 +1648,12 @@ body.is-loading {
 #cta {
 	.inner {
 		@include vendor('display', 'flex');
-		max-width: 45em;
+		max-width: 100%;
 
 		header {
 			@include vendor('order', '1');
 			padding-right: 3em;
-			width: 70%;
+			width: 90%;
 
 			p {
 				color: inherit;
@@ -1662,7 +1662,7 @@ body.is-loading {
 
 		.actions {
 			@include vendor('order', '2');
-			width: 30%;
+			width: 10%;
 		}
 
 		@include breakpoint(medium) {
