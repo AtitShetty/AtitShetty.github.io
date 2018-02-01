@@ -4,7 +4,7 @@
 # Site settings
 title: Atit Shetty
 description: |
-  <i>Logic will get you from A to B.<br>Imagination will take you everywhere.</i><br><small>-Albert Einstein</small>
+  <i>Logic will get you from A to B.<br>Imagination will take you everywhere.</i><br/><small>-Albert Einstein</small>
 owner: Atit Shetty # or company name
 first_published: 2018 # if migrating another site, the year of your first publish
 email: akshetty@ncsu.edu
