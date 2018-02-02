@@ -2044,3 +2044,15 @@ section{
 		border-radius: 15px;
 	}
 }
+
+.box.alt.about{
+	background-color:#2a3540;
+	padding: 1em;
+	border-radius: 10px;
+
+	img{
+		filter: grayscale(90%) brightness(150%);
+
+
+	}
+}
